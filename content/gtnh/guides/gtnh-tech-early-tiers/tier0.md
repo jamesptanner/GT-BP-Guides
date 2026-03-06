@@ -45,7 +45,7 @@ Some of the above ores need a mining level higher than what is obtained through 
 ## Getting Redstone
 To process redstone (and other dusts) from ores, follow these steps:
 
-1. Break with a GT hammer in word (crushed ore)
+1. Break with a GT hammer in world (crushed ore)
 2. Craft with a GT hammer (impure dust)
 3. Throw in a vanilla cauldron with water
 
