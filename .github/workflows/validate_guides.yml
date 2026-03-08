@@ -7,6 +7,8 @@ jobs:
   run_lint:
     name: Run Lint
     runs-on: ubuntu-slim
+    permissions:
+      pull-requests: write
     steps:
       - name: Checkout the code
         uses: actions/checkout@v4
@@ -23,4 +25,24 @@ jobs:
         run: npm i -g markdownlint-cli
 
       - name: Run lint
-        run: markdownlint -r lint/index.cjs "${{ steps.changes.outputs.changed }}"
+        id: lint
+        continue-on-error: true
+        run: |
+          ERRORS=$(markdownlint -r lint/index.cjs "${{ steps.changes.outputs.changed }}")
+          echo "errors=$ERRORS" >> $GITHUB_OUTPUT
+      - name: Process Results
+        id: process
+        run: |
+          if [[ -n ${{ steps.lint.outputs.errors}} ]]; then
+            echo "message=There were no deaths, no skill issues, not a single problem." >> $GITHUB_OUTPUT
+            echo "No errors reported for the guide" >> $GITHUB_OUTPUT
+          else
+            echo "message=HV to MV, yes." >> $GITHUB_OUTPUT
+            echo "The following errors were reported:" >> $GITHUB_OUTPUT
+            echo "${{ steps.lint.outputs.errors }}" >> $GITHUB_OUTPUT
+          fi
+      - name: Publish to PR
+        uses: mshick/add-pr-comment@v2
+        with:
+          message: ${{ steps.process.outputs.message}}
+
