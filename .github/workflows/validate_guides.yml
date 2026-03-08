@@ -34,12 +34,16 @@ jobs:
         id: process
         run: |
           if [[ -n "${{ steps.lint.outputs.errors}}" ]]; then
-            echo "message=There were no deaths, no skill issues, not a single problem." >> $GITHUB_OUTPUT
+            echo "message=<<EOF" >> $GITHUB_OUTPUT
+            echo "There were no deaths, no skill issues, not a single problem." >> $GITHUB_OUTPUT
             echo "No errors reported for the guide" >> $GITHUB_OUTPUT
+            echo 'EOF' >> $GITHUB_OUTPUT
           else
-            echo "message=HV to MV, yes." >> $GITHUB_OUTPUT
+            echo "message=<<EOF" >> $GITHUB_OUTPUT
+            echo "HV to MV, yes." >> $GITHUB_OUTPUT
             echo "The following errors were reported:" >> $GITHUB_OUTPUT
             echo "${{ steps.lint.outputs.errors }}" >> $GITHUB_OUTPUT
+            echo 'EOF' >> $GITHUB_OUTPUT
           fi
       - name: Publish to PR
         uses: mshick/add-pr-comment@v2
