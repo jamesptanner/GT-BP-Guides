@@ -2,6 +2,7 @@ name: Validate Guide
 on:
   pull_request:
     branches: master
+    paths: content/gtnh/guides/**
 jobs:
   run_lint:
     name: Run Lint
@@ -15,7 +16,7 @@ jobs:
         id: changes
         run: |
           git fetch origin ${{ github.base_ref }}
-          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep 'content/')
           echo "changed=$CHANGED_FILES" >> $GITHUB_OUTPUT
 
       - name: Install Dependencies
