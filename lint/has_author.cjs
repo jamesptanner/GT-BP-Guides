@@ -5,7 +5,10 @@
 /** @type {import("markdownlint").RuleFunction} */
 const GTBP02 = (params, onError) => {
   const authorLines = params.frontMatterLines.filter((line)=> line.startsWith("author:"));
-  if(authorLines.length<1) {onError({lineNumber:1, detail:"No author field found in frontMatter"})};
+  if(authorLines.length<1) {
+    onError({lineNumber:1, detail:"No author field found in frontMatter"});
+    return;
+  };
   const authorValue = JSON.parse(authorLines[0].substring(authorLines[0].indexOf(':')+2));
   if(typeof authorValue != 'string') { onError({lineNumber: 1, detail:"author field should be a string"})}
 }

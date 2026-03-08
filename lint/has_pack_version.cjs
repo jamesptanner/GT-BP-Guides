@@ -5,7 +5,10 @@
 /** @type {import("markdownlint").RuleFunction} */
 const GTBP04 = (params, onError) => {
   const packVersionLines = params.frontMatterLines.filter((line)=> line.startsWith("pack_version:"));
-  if(packVersionLines.length<1) {onError({lineNumber:1, detail:"No pack_version field found in frontMatter"})};
+  if(packVersionLines.length<1) {
+    onError({lineNumber:1, detail:"No pack_version field found in frontMatter"});
+    return;
+  };
   const packVersionValue = packVersionLines[0].substring(packVersionLines[0].indexOf(':')+2).replaceAll('"','').replaceAll('\'','');
   if(typeof packVersionValue != 'string') { onError({lineNumber: 1, detail:"pack_version should be a string"})}
 
