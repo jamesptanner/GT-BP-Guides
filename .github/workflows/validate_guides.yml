@@ -29,13 +29,14 @@ jobs:
         continue-on-error: true
         run: |
           ERRORS=$(markdownlint -r lint/index.cjs "${{ steps.changes.outputs.changed }}")
+          echo "result=$?" >> $GITHUB_OUTPUT
           echo "errors<<EOF" >> $GITHUB_OUTPUT
           echo "$ERRORS" >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
       - name: Process Results
         id: process
         run: |
-          if [ "${{ steps.lint.outputs.errors}}" ]; then
+          if [ 0 -ne "${{ steps.lint.outputs.result}}" ]; then
             echo "message<<EOF" >> $GITHUB_OUTPUT
             echo "HV to MV, yes." >> $GITHUB_OUTPUT
             echo "The following errors were reported:" >> $GITHUB_OUTPUT
