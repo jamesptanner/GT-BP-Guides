@@ -29,7 +29,9 @@ jobs:
         continue-on-error: true
         run: |
           ERRORS=$(markdownlint -r lint/index.cjs "${{ steps.changes.outputs.changed }}")
-          echo "errors=$ERRORS" >> $GITHUB_OUTPUT
+          echo "errors<<EOF" >> $GITHUB_OUTPUT
+          echo "$ERRORS" >> $GITHUB_OUTPUT
+          echo "EOF" >> $GITHUB_OUTPUT
       - name: Process Results
         id: process
         run: |
