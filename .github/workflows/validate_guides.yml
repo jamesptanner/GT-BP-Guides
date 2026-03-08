@@ -1,0 +1,25 @@
+name: Validate Guide
+on:
+  pull_request:
+    branches: master
+jobs:
+  run_lint:
+    name: Run Lint
+    runs-on: ubuntu-slim
+    steps:
+      - name: Checkout the code
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0 # Ensures we have the full history for diff
+      - name: Get changed files
+        id: changes
+        run: |
+          git fetch origin ${{ github.base_ref }}
+          CHANGED_FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          echo "changed=$CHANGED_FILES" >> $GITHUB_OUTPUT
+
+      - name: Install Dependencies
+        run: npm i -g markdownlint-cli
+
+      - name: Run lint
+        run: markdownlint -r lint/index.cjs "${{ steps.changes.outputs.changed }}"
