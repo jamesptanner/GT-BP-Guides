@@ -33,7 +33,7 @@ jobs:
       - name: Process Results
         id: process
         run: |
-          if [[ -n ${{ steps.lint.outputs.errors}} ]]; then
+          if [[ -n "${{ steps.lint.outputs.errors}}" ]]; then
             echo "message=There were no deaths, no skill issues, not a single problem." >> $GITHUB_OUTPUT
             echo "No errors reported for the guide" >> $GITHUB_OUTPUT
           else
