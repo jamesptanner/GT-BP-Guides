@@ -28,10 +28,8 @@ jobs:
         id: lint
         continue-on-error: true
         run: |
-          ERRORS=$(markdownlint -r lint/index.cjs "${{ steps.changes.outputs.changed }}" || true)
-          echo "result=$?" >> $GITHUB_OUTPUT
           echo "errors<<EOF" >> $GITHUB_OUTPUT
-          echo "$ERRORS" >> $GITHUB_OUTPUT
+          echo $(markdownlint -r lint/index.cjs "${{ steps.changes.outputs.changed }}" || true) >> $GITHUB_OUTPUT
           echo "EOF" >> $GITHUB_OUTPUT
       - name: Process Results
         id: process
