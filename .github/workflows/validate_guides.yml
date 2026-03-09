@@ -35,7 +35,7 @@ jobs:
         id: process
         run: |
           echo $errors >> errors.txt
-          cat error.txt
+          cat errors.txt
           if [[ $(wc -l errors.txt) -ne 1 ]]; then
             echo "message<<EOF" >> $GITHUB_OUTPUT
             echo "HV to MV, yes." >> $GITHUB_OUTPUT
