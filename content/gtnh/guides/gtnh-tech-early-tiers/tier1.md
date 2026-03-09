@@ -1,6 +1,6 @@
 ---
 date: 2025-01-01
-tiers: ['UHLV']
+tiers: ['LV']
 mods: ['Gregtech']
 author: "jamesptanner"
 pack_version: "2.8.4"
