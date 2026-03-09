@@ -34,7 +34,8 @@ jobs:
       - name: Process Results
         id: process
         run: |
-          if [ ${echo "${{ steps.lint.outputs.errors}}" | wc -l} -ne 1 ]; then
+          echo "${{ steps.lint.outputs.errors}}" >> errors.txt
+          if [ $(wc -l errors.txt) -ne 1 ]; then
             echo "message<<EOF" >> $GITHUB_OUTPUT
             echo "HV to MV, yes." >> $GITHUB_OUTPUT
             echo "The following errors were reported:" >> $GITHUB_OUTPUT
