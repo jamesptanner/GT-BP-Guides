@@ -36,11 +36,11 @@ jobs:
         run: |
           echo "${{ steps.lint.outputs.errors }}" >> errors.txt
           cat errors.txt
-          if [[ $(cat errors.txt | wc -l) -ne 1 ]]; then
+          if [[ $(cat errors.txt | wc -l) -ne 0 ]]; then
             echo "message<<EOF" >> $GITHUB_OUTPUT
             echo "HV to MV, yes." >> $GITHUB_OUTPUT
             echo "The following errors were reported:" >> $GITHUB_OUTPUT
-            echo "$errors" >> $GITHUB_OUTPUT
+            echo "${{ steps.lint.outputs.errors }}" >> $GITHUB_OUTPUT
             echo 'EOF' >> $GITHUB_OUTPUT
           else
             echo "message<<EOF" >> $GITHUB_OUTPUT
