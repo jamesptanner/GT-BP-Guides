@@ -2,7 +2,7 @@
 date: 2026-03-10
 tiers: ['LV']
 mods: ['Gregtech', 'Tinkers Construct']
-author: jamesptanner
+author: "jamesptanner"
 pack_version: "2.8.4"
 image: ""
 ---
