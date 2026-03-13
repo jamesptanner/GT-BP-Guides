@@ -19,7 +19,7 @@ jobs:
         run: |
           git fetch origin ${{ github.base_ref }}
           CHANGED-FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD | grep 'content/' | xargs )
-          echo "changed=$CHANGED-FILES" >> $GITHUB_OUTPUT
+          echo 'changed="$CHANGED-FILES"' >> $GITHUB_OUTPUT
 
       - name: Install Dependencies
         run: |
