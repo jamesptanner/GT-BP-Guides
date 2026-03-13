@@ -2,8 +2,6 @@
 date: 2026-03-10
 tiers: ['LV']
 mods: ['Gregtech', 'Tinkers Construct']
-author: "jamesptanner"
-pack_version: "2.8.4"
 image: ""
 ---
 First you need a sword. then find some cows and kill them. You should get some leather. Once you have four pieces of leather now comes the difficult bit.
