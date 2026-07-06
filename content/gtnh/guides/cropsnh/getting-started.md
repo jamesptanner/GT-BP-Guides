@@ -72,7 +72,7 @@ The numbers for nerds shouldn't be ignored!  They mean the following things:
 
 - Tier - This tells you how complex the crop is.  The higher the number the more requirements you are likely to need to meet to be able to breed and grow the crop.  We'll be sticking to Tiers 1 and 2 for now.
 - Growth Points - The higher this number the slower the crop will grow under ideal conditions.  The fastest growing crop is Torchberries (150), followed closely by those Berrys (200) I had you get earlier.
-- Drop Multiplier - The number by which drops are multiplied???  Needs research
+- Drop Multiplier - Crop drops on average are calculated via the following formula:  (\[Item Count] * \[Drop Multiplier] * 1.03^\[Gain])
 - Likes - This lists the biome tags that the specific crop likes.  We'll get more into how to keep your plants happy later.  For now this can mostly be ignored, but if you're curious you can head over to The GTNH Wiki [https://wiki.gtnewhorizons.com/wiki/Biome] for a comprehensive list of biome tags.
 - Other notes will appear below 
 
