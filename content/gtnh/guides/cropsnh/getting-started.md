@@ -9,11 +9,15 @@ image: ""
 
 # Beginner's Guide To CropsNH
 
+![img alt text](../../../../public/img/gtnh/guides/crops/getting-started/title.png)
+
 Welcome to CropsNH!  This mod is one of the standout additions to the pack in 2.9 and this series of guides will tell you everything you need to know to become a crop master!
 
-In this first guide in the series we'll be covering all you need to know to get started up to including getting your very first 31/31/31 seed.  Subsequent guides will cover topics such as pool breeding, deterministic breeding, machine breeding, downstatting, and much more!
+In this first guide in the series we'll be covering all you need to know to get started up to and including getting your very first 31/31/31 seed.  Subsequent guides will cover topics such as pool breeding, deterministic breeding, machine breeding, downstatting, and much more!
 
 ## Gearing up for some serious farming
+
+![img alt text](../../../../public/img/gtnh/guides/crops/getting-started/quest_prereqs.png)
 
 While you can get started on CropsNH as early as the Stone Age right after the "Important Tools" quest, I would suggest waiting until you have ~20 Steel to spare and the "Blastoff!" quest in the Steam Age to get started.
 
@@ -48,11 +52,15 @@ Next we'll knock out three quests at once.  Unless you got lucky enough to have 
 
 Don't forget to right click some water with the Watering Can (Empty) to fill it up!  You'll want to take the 32 Fertilizer and LootBag (Crops) for your choice rewards.  Open the bag right away!
 
+![img alt text](../../../../public/img/gtnh/guides/crops/getting-started/quest_progress.png)
+
 ## Reading for Nerds
 
 One final step before we get to farming!  Unlike its predecessor IC2 Crops, the information about CropsNH in NEI is super useful!  Go ahead and check the uses on the Berry Seeds.
 
 ### Crops Tab
+
+![img alt text](../../../../public/img/gtnh/guides/crops/getting-started/crops_tab.png)
 
 The Crops tab gives us basic information on how to grow the crop.  On the left you'll see the seed with one or two blocks displayed under it, on the right the items the crop has the potential to drop when harvested, and below some numbers for nerds.
 
@@ -66,6 +74,7 @@ The numbers for nerds shouldn't be ignored!  They mean the following things:
 - Growth Points - The higher this number the slower the crop will grow under ideal conditions.  The fastest growing crop is Torchberries (150), followed closely by those Berrys (200) I had you get earlier.
 - Drop Multiplier - The number by which drops are multiplied???  Needs research
 - Likes - This lists the biome tags that the specific crop likes.  We'll get more into how to keep your plants happy later.  For now this can mostly be ignored, but if you're curious you can head over to The GTNH Wiki [https://wiki.gtnewhorizons.com/wiki/Biome] for a comprehensive list of biome tags.
+- Other notes will appear below 
 
 ### Crop Breeding Tab
 
@@ -77,6 +86,8 @@ Similar to the Crop Breeding tab, this tab gives you information on how to rando
 
 ### Crop Tool Tip
 
+![img alt text](../../../../public/img/gtnh/guides/crops/getting-started/tooltip.png)
+
 Once you're comfortable with those three tabs in NEI go ahead and till a block of dirt (right click it with your Spade) near a water source to create farmland.   Slap down a single crop stick and then right click one of your Berrys into it.  Finally right click the Crop Stick Berry combination with your Plant Lens.
 
 Notice that the tooltip has been updated with all sorts of useful information!
@@ -86,6 +97,8 @@ While the Stats are important and control various aspects of the crop growing an
 The Soil information simply tells you how much Fertilizer, Water, and Weed-Ex is applied to that particular crop.
 
 ## Enough Yapping, Let's Get Farming!
+
+![img alt text](../../../../public/img/gtnh/guides/crops/getting-started/stat_breeding.png)
 
 Once the Berry crop you planted has reached Progress: 100.00% (check the tooltip!) you will want to place down a crosscrop next to it.  Make sure to till the soil (it won't be a valid target for Berrys otherwise, remember the soil block in NEI!) and right click it twice with Crop Sticks.  Finally, target the ground near the Berry Crop with the Watering Can in hand then right click and hold until it has 100 water.
 
@@ -102,6 +115,8 @@ At this point it is worth noting that each time a crop spreads to a crosscrop it
 I would also suggest doing two (or even more if you can handle it!) at once.  After Berry, Oak Bonsai Seed is a good second target (you can right click the Oak Saplings I had you collect earlier onto a Crop Stick just like you did with the Berry).  Carrot, Potato, and Sugar Cane are all good tertiary targets after that.
 
 Now all that's left is to repeat the process until you've got 31/31/31 seeds!  Congratulations! You did it!  To harvest the seeds right click on a fully grown plant with your Spade. 31/31/31 stat seeds have a 100% chance to drop one seed with the Spade (this increases to three seeds with the Reinforced Spade, but you can't get that until the MV Age).
+
+## Wrapping Up
 
 Collect your rewards from the following quests and move on to the Pools Breeding Guide! You've got this!
 
