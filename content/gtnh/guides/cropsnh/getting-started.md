@@ -23,11 +23,11 @@ While you can get started on CropsNH as early as the Stone Age right after the "
 
 ### A Green Revolution
 
-Quest progress is very important!  The quest rewards and loot bag drops you can get are very desirable, so to begin with head on over to the "The Green Revolution" quest tab and get started with the "A Green Revolution" quest.  In addition to what the quest wants you to obtain I've prepared an extended shopping list for you.  Don't worry!  I'll tell you the easiest way to find the things on the list.
+Quest progress is very important!  The quest rewards and loot bag drops you can get are very desirable, so to begin with head on over to the "The Green Revolution" quest tab and get started with the "A Green Revolution" quest.  In addition to what the quest wants you to obtain I've prepared an extended shopping list for you.
 
 - A 9x9 plot of land in an 80% humidity biome
 - 64x (Any) Log
-- 8x Oak Sapling
+- 8x (A Sapling
 - 8x Berry
 - 5x Seeds
 - 5x Carrot
@@ -41,7 +41,7 @@ Now with that out of the way, let's get down to doing some crafting!  With that 
 
 ### Crafting your tools
 
-Next we'll knock out three quests at once.  Unless you got lucky enough to have one of these tools top from your first lootbag grab the following shopping list and craft 1x Spade, 1x Watering Can (Empty), and 1x Plant Lens.
+Next we'll knock out three quests at once.  Unless you got lucky enough to get one of these tools to drop from your first lootbag grab the items from this second shopping list and use them to craft craft 1x Spade, 1x Watering Can (Empty), and 1x Plant Lens.
 
 - 20 Steel Ingot
 - 11 Iron Ingot
@@ -110,7 +110,7 @@ Now get to waiting!  After a short period of time the crosscrop should disappear
 - If you answered yes to both of these questions, we can get rid of the old crop!  With an empty hand left click the original crop, then right click a Crop Stick on to it to create a new crosscrop.  Reapply water as necessary!
 - If you answered no to either of these questions, destroy the new crop and re-create the crosscrop there instead.
 
-At this point it is worth noting that each time a crop spreads to a crosscrop it has a chance to alter each stat by any number between -4 and +2.  This can be improved to between +0 and +2 by applying Fertilizer.  Since we currently have such a limited supply I will leave it up to you whether or not to use it, but one of our very early goals once we have 31/31/31 seeds will be to get Fertilia, so it wont be in limited supply for long!  If you do apply fertilizer be VERY careful not to break the Crop Stick when left clicking crops away.  As long as the Crop Stick isn't broken the fertilizer will stick around until it's used up!
+At this point it is worth noting that each time a crop spreads to a crosscrop it has a chance to alter each stat by any number between -2 and +4.  This can be improved to between +0 and +4 by applying Fertilizer (or Bone Meal!).  One of our very early goals once we have 31/31/31 seeds will be to get Fertilia, so it wont be in limited supply for long!  If you do apply fertilizer be VERY careful not to break the Crop Stick when left clicking crops away.  As long as the Crop Stick isn't broken the fertilizer will stick around until it's used up!
 
 I would also suggest doing two (or even more if you can handle it!) at once.  After Berry, Oak Bonsai Seed is a good second target (you can right click the Oak Saplings I had you collect earlier onto a Crop Stick just like you did with the Berry).  Carrot, Potato, and Sugar Cane are all good tertiary targets after that.
 
