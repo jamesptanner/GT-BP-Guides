@@ -11,8 +11,12 @@ const GTBP04 = (params, onError) => {
   };
   const packVersionValue = packVersionLines[0].substring(packVersionLines[0].indexOf(':')+2).replaceAll('"','').replaceAll('\'','');
   if(typeof packVersionValue != 'string') { onError({lineNumber: 1, detail:"pack_version should be a string"})}
-
-  if ( !/^[0-9]+\.[0-9]+\.[0-9]+$/.test(packVersionValue)) { onError({lineNumber:1, detail:"pack_version should be formatted as X.Y.Z"}) }
+  let validVersion = false;
+  if ( !/^[0-9]+\.[0-9]+\.[0-9]+$/.test(packVersionValue) &&    // x.y.z
+       !/^[0-9]+\.[0-9]+$/.test(packVersionValue) &&            // x.y
+       !/^[0-9]+\.[0-9]+ beta[0-9]+$/.test(packVersionValue) && // x.y beta#
+       !/^[0-9]+\.[0-9]+ rc[0-9]+$/.test(packVersionValue)      // x.y rc#
+) { onError({lineNumber:1, detail:"check your pack_version format. `X.Y[.Z]` or `X.Y beta#` or `X.Y rc#`"}) }
 }
 
 /** @type {import("markdownlint").Rule} */
