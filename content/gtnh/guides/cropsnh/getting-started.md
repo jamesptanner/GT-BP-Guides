@@ -2,6 +2,8 @@
 date: 2026-06-07
 tiers: ['Stone Age']
 mods: ['CropsNH']
+author: "mister_nibbles"
+pack_version: "2.9 beta1"
 image: ""
 ---
 
